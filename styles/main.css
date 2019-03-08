@@ -10,8 +10,25 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .wrapper {
   margin: 0 15px;
+}
+
+@media all and (min-width: 768px) {
+  .wrapper {
+    margin: 0 45px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    margin: 0 138px;
+  }
 }
 
 /* fix the overlap of the nav in the section header when scrolling */
@@ -104,10 +121,6 @@ body {
     background: none;
   }
 
-  .wrapper {
-    margin: 0 45px;
-  }
-
   #team::before,
   #about::before {
     margin-top: -70px;
@@ -116,7 +129,6 @@ body {
 }
 
 /****** HERO Section ******/
-
 #hero_section {
   display: flex;
   flex-direction: column;
@@ -130,17 +142,15 @@ body {
   background-repeat: no-repeat;
   min-height: 421px;
 }
-.wrapper {
-  margin: 0 15px;
-}
 
 .claim__section {
-  height: 80px;
-  transform: translateY(-50%);
+  transform: translateY(-100%);
   background-color: white;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  max-width: 290px;
+  margin: 0 auto;
 }
 
 .claim__title {
@@ -158,18 +168,15 @@ body {
 @media (min-width: 768px) {
   .claim__section {
     align-self: flex-start;
-    width: 441px;
+    max-width: 441px;
     height: 80px;
     transform: translateY(-100%);
     background-color: rgb(255, 255, 255, 0.8);
+    margin: 0;
   }
 
   .claim__title {
     margin: 15px 30px;
-  }
-
-  .wrapper {
-    margin: 0 46px;
   }
 }
 
@@ -178,13 +185,10 @@ body {
     height: 550px;
   }
 
-  .wrapper {
-    margin: 0 138px;
-  }
-
   .claim__section {
     height: 90px;
-    width: 574px;
+    max-width: 574px;
+    background-color: rgb(255, 255, 255, 0.8);
   }
 
   .claim__title {
@@ -193,9 +197,8 @@ body {
     margin: 15px 30px;
   }
 }
-
 /****** Team Section ******/
-/* Team*/
+/* Team */
 
 #team {
   background-color: #ffffff;
@@ -208,7 +211,6 @@ body {
   color: #14d9c4;
   line-height: 45px;
   margin: 0;
-  /* padding-top: 30px; */
 }
 
 .team__paragraph {
@@ -224,9 +226,11 @@ body {
     padding-top: 0;
     color: #099d8d;
   }
+
   .team__paragraph {
     opacity: 0.67;
   }
+
   .team__paragraph:last-child {
     padding-bottom: 30px;
   }
@@ -309,10 +313,6 @@ body {
 }
 
 @media all and (min-width: 1200px) {
-  .wrapper {
-    margin: 0 138px;
-  }
-
   .sw__content__item:first-child {
     margin-right: 45px;
   }
@@ -409,7 +409,7 @@ body {
 @media all and (min-width: 768px) {
   .about__member {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: left;
     margin-bottom: 60px;
   }
@@ -461,11 +461,11 @@ body {
   }
 
   .about__member:nth-child(odd) .about__member__bio {
-    padding-right: 161px;
+    padding-right: 160px;
   }
 
   .about__member:nth-child(even) .about__member__bio {
-    padding-left: 161px;
+    padding-left: 160px;
   }
 
   .about__member__content {
@@ -495,7 +495,6 @@ body {
 
 .footer__menu {
   padding: 0;
-  margin: 20 29 30 29;
   list-style: none;
   opacity: 0.75;
   font-weight: 600;
@@ -508,20 +507,33 @@ body {
   font-weight: bold;
 }
 
+.footer__menu__link:hover {
+  color: #14d9c4;
+}
+
 .adalab-logo {
   height: 45px;
-  width: 115.9px;
   margin-bottom: 45px;
 }
 
 @media all and (min-width: 768px) {
   .footer__menu {
-    float: right;
     text-align: right;
+    padding-top: 30px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-bottom: 60px;
   }
 
-  .footer__container,
   .footer__copyright {
+    padding-bottom: 15px;
+    text-align: left;
+  }
+
+  .footer__container {
+    position: relative;
     text-align: left;
   }
 }
