@@ -25,7 +25,7 @@ a {
   }
 }
 
-@media (min-width: 1200px) {
+@media all and (min-width: 1200px) {
   .wrapper {
     margin: 0 138px;
   }
@@ -129,6 +129,7 @@ a {
 }
 
 /****** HERO Section ******/
+
 #hero_section {
   display: flex;
   flex-direction: column;
@@ -165,7 +166,7 @@ a {
   margin: auto 15px;
 }
 
-@media (min-width: 768px) {
+@media all and (min-width: 768px) {
   .claim__section {
     align-self: flex-start;
     max-width: 441px;
@@ -180,7 +181,7 @@ a {
   }
 }
 
-@media (min-width: 1200px) {
+@media all and (min-width: 1200px) {
   .hero__image {
     height: 550px;
   }
