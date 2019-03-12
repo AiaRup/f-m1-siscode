@@ -130,10 +130,10 @@ a {
 
 /****** HERO Section ******/
 
-#hero_section {
+/* #hero {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .hero__image {
   width: 100%;
@@ -251,7 +251,7 @@ a {
   background-color: rgba(184, 184, 185, 0.2);
 }
 
-.sw__h3 {
+.sw__title {
   font-size: 22px;
   font-family: 'Rubik', sans-serif;
   color: #099d8d;
@@ -259,7 +259,7 @@ a {
   margin: 0;
 }
 
-.sw__p {
+.sw__paragraph {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   text-align: center;
@@ -268,7 +268,7 @@ a {
   margin: 0;
 }
 
-.triangle {
+.sw__triangle {
   position: relative;
   z-index: 1;
   margin: 0 auto;
@@ -279,7 +279,7 @@ a {
   border-top: 30px solid white;
 }
 
-.triangle__container {
+.sw__triangle--container {
   width: 100%;
 }
 
@@ -287,7 +287,7 @@ a {
   padding-bottom: 15px;
 }
 
-.sw__content__item {
+.sw__content--item {
   padding-bottom: 30px;
 }
 
@@ -298,23 +298,23 @@ a {
     padding-bottom: 0;
   }
 
-  .sw__content__item {
+  .sw__content--item {
     width: 50%;
     padding-top: 15px;
     padding-bottom: 60px;
   }
 
-  .sw__content__item:first-child {
+  .sw__content--item:first-child {
     margin-right: 30px;
   }
 
-  .sw__h3 {
+  .sw__title {
     padding-bottom: 15px;
   }
 }
 
 @media all and (min-width: 1200px) {
-  .sw__content__item:first-child {
+  .sw__content--item:first-child {
     margin-right: 45px;
   }
 }
@@ -332,13 +332,13 @@ a {
   text-transform: uppercase;
 }
 
-.about__member__list {
+.member__list {
   margin: 0;
   list-style: none;
   padding: 0;
 }
 
-.about__member {
+.member__item {
   margin-bottom: 45px;
 }
 
@@ -361,7 +361,7 @@ a {
   font-size: 16px;
 }
 
-.about__member__image__container {
+.member__image--container {
   border: 5px solid rgba(0, 0, 0, 0.08);
   width: 180px;
   height: 180px;
@@ -370,12 +370,12 @@ a {
   margin: 0 auto;
 }
 
-.about__member__image {
+.member__image {
   width: 100%;
   height: 100%;
 }
 
-.about__member__linkList {
+.member__linkList {
   list-style: none;
   margin: 15px auto 0;
   padding: 0;
@@ -384,15 +384,15 @@ a {
   color: #54585a;
 }
 
-.about__member__linkItem {
+.member__linkItem {
   display: inline-block;
 }
 
-.about__member__linkItem::before {
+.member__linkItem::before {
   content: '·';
 }
 
-.about__member__linkItem:first-child::before {
+.member__linkItem:first-child::before {
   content: '';
 }
 
@@ -408,36 +408,36 @@ a {
 }
 
 @media all and (min-width: 768px) {
-  .about__member {
+  .member__item {
     display: flex;
     justify-content: flex-start;
     text-align: left;
     margin-bottom: 60px;
   }
 
-  .about__member:nth-child(even) {
+  .member__item:nth-child(even) {
     flex-direction: row-reverse;
     text-align: right;
   }
 
-  .about__member__image__container {
+  .member__image--container {
     width: 210px;
     height: 210px;
   }
 
-  .about__member:nth-child(odd) .about__member__image__container {
+  .member__item:nth-child(odd) .member__image--container {
     margin-right: 30px;
   }
 
-  .about__member:nth-child(even) .about__member__image__container {
+  .member__item:nth-child(even) .member__image--container {
     margin-left: 30px;
   }
 
-  .about__member__content {
+  .member__content {
     width: 70%;
   }
 
-  .about__member__name {
+  .member__name {
     margin: 0;
   }
 
@@ -447,29 +447,29 @@ a {
 }
 
 @media all and (min-width: 1200px) {
-  .about__member__image__container {
+  .member__image--container {
     width: 280px;
     height: 280px;
     margin: 0;
   }
 
-  .about__member:nth-child(odd) .about__member__image__container {
+  .member__item:nth-child(odd) .member__image--container {
     margin-right: 45px;
   }
 
-  .about__member:nth-child(even) .about__member__image__container {
+  .member__item:nth-child(even) .member__image--container {
     margin-left: 45px;
   }
 
-  .about__member:nth-child(odd) .about__member__bio {
+  .member__item:nth-child(odd) .member__bio {
     padding-right: 160px;
   }
 
-  .about__member:nth-child(even) .about__member__bio {
+  .member__item:nth-child(even) .member__bio {
     padding-left: 160px;
   }
 
-  .about__member__content {
+  .member__content {
     padding: 0;
   }
 }
@@ -502,13 +502,13 @@ a {
   line-height: 2.14;
 }
 
-.footer__menu__link {
+.footer__menu--link {
   text-decoration: none;
   color: #54585a;
   font-weight: bold;
 }
 
-.footer__menu__link:hover {
+.footer__menu--link:hover {
   color: #14d9c4;
 }
 
