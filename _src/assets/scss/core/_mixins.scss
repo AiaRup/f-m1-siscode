@@ -1,0 +1,18 @@
+@mixin paragraphStyle() {
+  font-family: $openSans;
+  font-size: 16px;
+  color: $darkGray;
+  line-height: 24px;
+}
+
+@mixin titleStyle($color, $fontSize) {
+  font-family: $rubik;
+  color: $color;
+  line-height: 45px;
+  font-size: $fontSize;
+}
+
+@mixin flexLayout($justifyContent) {
+  display: flex;
+  justify-content: $justifyContent;
+}
