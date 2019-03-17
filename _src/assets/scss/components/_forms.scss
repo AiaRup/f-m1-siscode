@@ -1,0 +1,37 @@
+@import 'components/typography';
+
+// aditional padding for content. Remove after adding hero.
+
+.contact__main {
+    padding-top: 300px; 
+}
+
+// sheets styles
+main {
+    padding: 0;
+    margin: 0;
+}
+
+
+// form styles 
+
+.contact__main {
+    @include paragraphStyle;
+
+    & .contact__main--title {
+        @include titleStyle ($lightGreen, 24px);
+    }
+
+    & .contact__main--secondarytext {
+        font-size: 12px;
+    }
+
+}
+
+.contact__page .asterisk{
+    color: aqua;
+}
+
+
+
+
