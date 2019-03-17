@@ -18,12 +18,23 @@ main {
 .contact__page {
     @include paragraphStyle;
 
+    & .field__container:first-child {
+        margin-top: 58px;
+    }
+
+    & .field__container {
+        margin-top: 13px;
+    }
+
     & .contact__main--title {
-        @include titleStyle ($lightGreen, 24px);
+        @include titleStyle ($darkGreen, 24px);
+        padding: 0;
+        margin: 0 0 15px 0;
     }
 
     & .contact__main--secondarytext {
         font-size: 12px;
+        margin-bottom: 0;
     }
 
     & .asterisk{
@@ -37,17 +48,24 @@ main {
     }
 
     & .field__input {
-        width: 100%;
-        height: 45px;
+        @include formStyle($darkGray);
         border: solid 1px $lightGray;
-        padding: 15px;
-        box-sizing: border-box;
-        color: $darkGray;
-        font-family: $openSans;
+        padding: 11px 15px 15px;
+        font-size: 14px;
     }
 
     & .field__textarea {
         height: 105px;
+    }
+
+    & .field__button {
+        @include formStyle($white);
+        margin-top: 30px;
+        border: none;
+        background-color: $darkGreen;
+        border-radius: 4px;
+        font-size: 16px;
+        text-transform: uppercase;
     }
 }
 

@@ -16,3 +16,12 @@
   display: flex;
   justify-content: $justifyContent;
 }
+
+
+@mixin formStyle ($color) {
+  width: 100%;
+  height: 45px;
+  font-family: $openSans;
+  color: $color;
+  box-sizing: border-box;
+}
