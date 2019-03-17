@@ -15,7 +15,7 @@ main {
 
 // form styles 
 
-.contact__main {
+.contact__page {
     @include paragraphStyle;
 
     & .contact__main--title {
@@ -26,11 +26,32 @@ main {
         font-size: 12px;
     }
 
+    & .asterisk{
+        color: aqua;
+    }
+
+    & .field__label {
+        font-size: 14px;
+        display: block;
+        text-align: left;
+    }
+
+    & .field__input {
+        width: 100%;
+        height: 45px;
+        border: solid 1px $lightGray;
+        padding: 15px;
+        box-sizing: border-box;
+        color: $darkGray;
+        font-family: $openSans;
+    }
+
+    & .field__textarea {
+        height: 105px;
+    }
 }
 
-.contact__page .asterisk{
-    color: aqua;
-}
+
 
 
 
