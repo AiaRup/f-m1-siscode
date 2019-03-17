@@ -1,14 +1,15 @@
 @mixin paragraphStyle() {
   font-family: $openSans;
-  font-size: 16px;
+  font-size: rem($defaultFontSize);
   color: $darkGray;
-  line-height: 24px;
+  line-height: rem(24);
+  font-weight: 400;
 }
 
 @mixin titleStyle($color, $fontSize) {
   font-family: $rubik;
   color: $color;
-  line-height: 45px;
+  line-height: rem($big);
   font-size: $fontSize;
 }
 

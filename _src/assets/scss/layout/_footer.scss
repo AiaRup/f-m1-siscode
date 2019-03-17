@@ -1,0 +1,58 @@
+/****** FOOTER Section ******/
+
+.footer {
+  border-top: 1px solid $lightGray;
+}
+
+.footer__container {
+  background: $white;
+  text-align: center;
+  font-family: $openSans;
+  font-size: rem(14);
+  margin: 0;
+  @media all and (min-width: 768px) {
+    position: relative;
+    text-align: left;
+  }
+
+  .footer__copyright {
+    color: $lightGray;
+    text-align: center;
+    padding-top: rem($medium);
+    @media all and (min-width: 768px) {
+      padding-bottom: rem($small);
+      text-align: left;
+    }
+  }
+
+  .footer__menu {
+    padding: 0;
+    list-style: none;
+    opacity: 0.75;
+    font-weight: 600;
+    line-height: rem($medium);
+    @media all and (min-width: 768px) {
+      text-align: right;
+      padding-top: rem($medium);
+      margin: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-bottom: rem(60);
+    }
+
+    .footer__menu--link {
+      text-decoration: none;
+      color: $darkGray;
+      font-weight: bold;
+      &:hover {
+        color: $lightGreen;
+      }
+    }
+  }
+
+  .adalab-logo {
+    height: rem($big);
+    margin-bottom: rem($big);
+  }
+}
