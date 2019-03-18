@@ -3,49 +3,49 @@
     color: $darkGreen;
     font-family: $rubik;
     font-weight: 500;
-    margin: $medium $zero;
-    font-size: 24px;
-    height: $big;
-    line-height: $big;
+    margin: rem($medium) 0;
+    font-size: rem(24);
+    height: rem($big);
+    line-height: rem($big);
     text-transform: uppercase;
   }
   
   .member__list {
-    margin: $zero;
+    margin: 0;
     list-style: none;
-    padding: $zero;
+    padding: 0;
   }
   
   .member__item {
-    margin-bottom: $big;
+    margin-bottom: rem($big);
   }
   
   .member__content {
-    padding: 10px 10px $zero;
+    padding: rem(10) rem(10) 0;
   }
   
   .member__name {
-    font-size: 20px;
+    font-size: rem(20);
     line-height: 2.25;
     color: $black;
     font-weight: 400;
-    margin: $small $zero $zero;
+    margin: $small 0 0;
   }
   
   .member__bio {
-    margin: $zero;
+    margin: 0;
     color: $darkGray;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: rem(16);
   }
   
   .member__image--container {
-    border: 5px solid rgba($black, 0.08);
-    width: 180px;
-    height: 180px;
-    border-radius: 4px;
+    border: rem(5) solid rgba($black, 0.08);
+    width: rem(180);
+    height: rem(180);
+    border-radius: rem(4);
     overflow-y: hidden;
-    margin: $zero auto;
+    margin: 0 auto;
   }
   
   .member__image {
@@ -55,9 +55,9 @@
   
   .member__linkList {
     list-style: none;
-    margin: $small auto $zero;
-    padding: $zero;
-    font-size: 16px;
+    margin: rem($small) auto 0;
+    padding: 0;
+    font-size: rem(16);
     line-height: 1.88;
     color: $darkGray;
   }
@@ -76,8 +76,8 @@
   
   .social_media_link {
     color: $darkGreen;
-    font-size: 16px;
-    padding: $zero 7px;
+    font-size: rem(16);
+    padding: 0 rem(7);
     display: inline-block;
   }
   
@@ -91,7 +91,7 @@
       // display: flex;
       // justify-content: flex-start;
       text-align: left;
-      margin-bottom: 60px;
+      margin-bottom: rem(60);
     }
   
     .member__item:nth-child(even) {
@@ -100,16 +100,16 @@
     }
   
     .member__image--container {
-      width: 210px;
-      height: 210px;
+      width: rem(210);
+      height: rem(210);
     }
   
     .member__item:nth-child(odd) .member__image--container {
-      margin-right: $medium;
+      margin-right: rem($medium);
     }
   
     .member__item:nth-child(even) .member__image--container {
-      margin-left: $medium;
+      margin-left: rem($medium);
     }
   
     .member__content {
@@ -117,38 +117,38 @@
     }
   
     .member__name {
-      margin: $zero;
+      margin: 0;
     }
   
     .about__title {
-      margin: $big $zero 41px;
+      margin: rem($big) 0 rem(41);
     }
   }
   
   @media all and (min-width: 1200px) {
     .member__image--container {
-      width: 280px;
-      height: 280px;
-      margin: $zero;
+      width: rem(280);
+      height: rem(280);
+      margin: 0;
     }
   
     .member__item:nth-child(odd) .member__image--container {
-      margin-right: $big;
+      margin-right: rem($big);
     }
   
     .member__item:nth-child(even) .member__image--container {
-      margin-left: $big;
+      margin-left: rem($big);
     }
   
     .member__item:nth-child(odd) .member__bio {
-      padding-right: 160px;
+      padding-right: rem(160);
     }
   
     .member__item:nth-child(even) .member__bio {
-      padding-left: 160px;
+      padding-left: rem(160);
     }
   
     .member__content {
-      padding: $zero;
+      padding: 0;
     }
   }

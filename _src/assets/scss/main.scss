@@ -1,18 +1,22 @@
 // Core
 @import 'core/variables';
-@import 'core/mixins';
+@import 'core/typography';
 @import 'core/functions';
+@import 'core/mixins';
+
+
 
 // Layout
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/grid';
+@import 'layout/about-us';
 
 // Components
 @import 'components/buttons';
 @import 'components/forms';
 @import 'components/hero';
-@import 'components/typography';
+
 
 // Pages
 @import 'pages/contact';
