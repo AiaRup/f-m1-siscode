@@ -1,0 +1,18 @@
+
+.member__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+  }
+  .member__image--container {
+    grid-column: 1/2;
+  }
+
+  .member__item:nth-child(even) {
+    grid-column: 3/4
+  }
+ 
+
+
+    
