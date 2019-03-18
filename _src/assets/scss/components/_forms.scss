@@ -1,5 +1,3 @@
-@import 'components/typography';
-
 // aditional padding for content. Remove after adding hero.
 
 .contact__main {
@@ -18,53 +16,54 @@ main {
 .contact__page {
     @include paragraphStyle;
 
-    & .field__container:first-child {
-        margin-top: 58px;
+    .field__container {
+        margin-top: rem(13);
+        
+        &:first-child {
+            margin-top: rem(58);
+        }
+    
     }
 
-    & .field__container {
-        margin-top: 13px;
-    }
-
-    & .contact__main--title {
-        @include titleStyle ($darkGreen, 24px);
+    .contact__main--title {
+        @include titleStyle ($darkGreen, rem(24));
         padding: 0;
-        margin: 0 0 15px 0;
+        margin: 0 0 rem($small) 0;
     }
 
-    & .contact__main--secondarytext {
-        font-size: 12px;
+    .contact__main--secondarytext {
+        font-size: rem(12);
         margin-bottom: 0;
     }
 
-    & .asterisk{
+    .asterisk{
         color: aqua;
     }
 
-    & .field__label {
-        font-size: 14px;
+    .field__label {
+        font-size: rem(14);
         display: block;
         text-align: left;
     }
 
-    & .field__input {
+    .field__input {
         @include formStyle($darkGray);
-        border: solid 1px $lightGray;
-        padding: 11px 15px 15px;
-        font-size: 14px;
+        border: solid rem(1) $lightGray;
+        padding: rem(11) rem($small) rem($small);
+        font-size: rem(14);
     }
 
-    & .field__textarea {
-        height: 105px;
+    .field__textarea {
+        height: rem(105);
     }
 
-    & .field__button {
+    .field__button {
         @include formStyle($white);
-        margin-top: 30px;
+        margin-top: rem($medium);
         border: none;
         background-color: $darkGreen;
-        border-radius: 4px;
-        font-size: 16px;
+        border-radius: rem(4);
+        font-size: rem(16);
         text-transform: uppercase;
     }
 }
