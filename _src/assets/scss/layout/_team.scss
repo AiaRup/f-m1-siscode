@@ -22,9 +22,7 @@
       padding-bottom: rem($medium);
     }
     @media all and (min-width: 1200px) {
-      padding: 0 rem(161);
-      padding-bottom: rem(60);
-      // check with Vero
+      padding: 0 rem(161) rem($medium);
     }
   }
 }
