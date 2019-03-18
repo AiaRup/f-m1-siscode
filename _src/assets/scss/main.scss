@@ -1,11 +1,12 @@
 // Core
 @import 'core/variables';
 @import 'core/typography';
-@import 'core/mixins';
 @import 'core/functions';
+@import 'core/mixins';
 
 // Layout
 @import 'layout/header';
+@import 'layout/team';
 @import 'layout/footer';
 @import 'layout/grid';
 
@@ -58,7 +59,7 @@
 .menu__link {
   font-family: $rubik;
   color: $white;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 2;
   font-size: 15px;
   text-decoration: none;
@@ -176,115 +177,6 @@
     font-size: 24px;
     line-height: 1.25;
     margin: 15px 30px;
-  }
-}
-/****** Team Section ******/
-/* Team */
-
-#team {
-  background-color: $white;
-  text-align: center;
-}
-
-.team__title {
-  @include titleStyle($lightGreen, 24px);
-  margin: 0;
-}
-
-.team__paragraph {
-  @include paragraphStyle();
-  margin: 15px 0 30px 0;
-}
-
-@media all and (min-width: 768px) {
-  .team__title {
-    padding-top: 0;
-    color: $darkGreen;
-  }
-
-  .team__paragraph {
-    rgba: 0.67;
-  }
-
-  .team__paragraph:last-child {
-    padding-bottom: 30px;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  .team__paragraph {
-    padding: 0 161px;
-  }
-}
-
-/* SW */
-
-.sw__container {
-  text-align: center;
-  position: relative;
-  background-color: rgba($lightGray, 0.2);
-}
-
-.sw__title {
-  @include titleStyle($darkGreen, 22px);
-  margin: 0;
-}
-
-.sw__paragraph {
-  @include paragraphStyle();
-  text-align: center;
-  margin: 0;
-}
-
-.sw__triangle {
-  position: relative;
-  z-index: 1;
-  margin: 0 auto;
-  width: 0;
-  height: 0;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-top: 30px solid $white;
-}
-
-.sw__triangle--container {
-  width: 100%;
-}
-
-.sw__content {
-  padding-bottom: 15px;
-}
-
-.sw__content--item {
-  padding-bottom: 30px;
-}
-
-@media all and (min-width: 768px) {
-  .sw__content {
-    @include flexLayout(space-between);
-    // display: flex;
-    // justify-content: space-between;
-    padding-bottom: 0;
-  }
-
-  .sw__content--item {
-    width: 50%;
-    padding-top: 15px;
-    padding-bottom: 60px;
-  }
-
-  .sw__content--item:first-child {
-    margin-right: 30px;
-  }
-
-  .sw__title {
-    padding-bottom: 15px;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  .sw__content--item:first-child {
-    margin-right: 45px;
   }
 }
 
@@ -441,70 +333,5 @@
 
   .member__content {
     padding: 0;
-  }
-}
-
-/****** FOOTER Section ******/
-
-.footer {
-  border-top: 1px solid #b8b8b9;
-}
-
-.footer__container {
-  background: $white;
-  text-align: center;
-  font-family: $openSans;
-  font-size: 14px;
-  margin: 0;
-}
-
-.footer__copyright {
-  color: $lightGray;
-  text-align: center;
-  padding-top: 30px;
-}
-
-.footer__menu {
-  padding: 0;
-  list-style: none;
-  rgba: 0.75;
-  font-weight: 600;
-  line-height: 2.14;
-}
-
-.footer__menu--link {
-  text-decoration: none;
-  color: $darkGray;
-  font-weight: bold;
-}
-
-.footer__menu--link:hover {
-  color: $lightGreen;
-}
-
-.adalab-logo {
-  height: 45px;
-  margin-bottom: 45px;
-}
-
-@media all and (min-width: 768px) {
-  .footer__menu {
-    text-align: right;
-    padding-top: 30px;
-    margin: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-bottom: 60px;
-  }
-
-  .footer__copyright {
-    padding-bottom: 15px;
-    text-align: left;
-  }
-
-  .footer__container {
-    position: relative;
-    text-align: left;
   }
 }

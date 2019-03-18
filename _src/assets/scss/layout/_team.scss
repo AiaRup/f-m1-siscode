@@ -1,0 +1,89 @@
+/****** Team Section ******/
+/* Team */
+
+#team {
+  background-color: $white;
+  text-align: center;
+
+  .team__title {
+    @include titleStyle($lightGreen, rem(24));
+    margin: 0;
+    @media all and (min-width: 768px) {
+      padding-top: 0;
+      color: $darkGreen;
+    }
+  }
+
+  .team__paragraph {
+    @include paragraphStyle();
+    margin: rem($small) 0 rem($medium) 0;
+    @media all and (min-width: 768px) {
+      opacity: 0.67;
+      padding-bottom: rem($medium);
+    }
+    @media all and (min-width: 1200px) {
+      padding: 0 rem(161) rem($medium);
+    }
+  }
+}
+
+/* SW */
+
+.sw__container {
+  text-align: center;
+  position: relative;
+  background-color: rgba($lightGray, 0.2);
+}
+
+.sw__triangle--container {
+  width: 100%;
+}
+
+.sw__triangle {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-left: rem($medium) solid transparent;
+  border-right: rem($medium) solid transparent;
+  border-top: rem($medium) solid $white;
+}
+
+.sw__content {
+  padding-bottom: rem($small);
+  @media all and (min-width: 768px) {
+    @include flexLayout(space-between);
+    padding-bottom: 0;
+  }
+
+  .sw__content--item {
+    padding-bottom: rem($medium);
+    @media all and (min-width: 768px) {
+      width: 50%;
+      padding-top: rem($small);
+      padding-bottom: rem(60);
+      &:first-child {
+        margin-right: rem($medium);
+      }
+    }
+    @media all and (min-width: 1200px) {
+      &:first-child {
+        margin-right: rem($big);
+      }
+    }
+
+    .sw__title {
+      @include titleStyle($darkGreen, rem(22));
+      margin: 0;
+      @media all and (min-width: 768px) {
+        padding-bottom: rem($small);
+      }
+    }
+
+    .sw__paragraph {
+      @include paragraphStyle();
+      margin: 0;
+    }
+  }
+}
