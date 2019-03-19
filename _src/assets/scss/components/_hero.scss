@@ -1,0 +1,60 @@
+/****** HERO Section ******/
+
+/* #hero {
+  display: flex;
+  flex-direction: column;
+} */
+
+.hero__image {
+  width: 100%;
+  background: url('../images/foto-ppal-2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: rem(421);
+  @media all and (min-width: 1200px) {
+    height: rem(550);
+  }
+}
+
+.claim__section {
+  transform: translateY(-100%);
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: rem(290);
+  margin: 0 auto;
+  @media all and (min-width: 768px) {
+    align-self: flex-start;
+    max-width: rem(441);
+    height: rem(80);
+    transform: translateY(-100%);
+    background-color: rgba($white, 0.8);
+    margin: 0;
+  }
+  @media all and (min-width: 1200px) {
+    height: rem(90);
+    max-width: rem(574);
+    background-color: rgba($white, 0.8); 
+  }
+  .claim__title {
+    font-family: $openSans;
+    font-size: rem(18);
+    color: $black;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.39;
+    justify-self: flex-end;
+    box-sizing: border-box;
+    margin: auto rem($small);
+    @media all and (min-width: 768px) {
+      margin: rem($small) rem($medium);
+    }
+    @media all and (min-width: 1200px) {
+      font-size: rem(24);
+      line-height: 1.25;
+      margin: rem($small) rem($medium);
+    }
+  }
+}

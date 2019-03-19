@@ -1,0 +1,73 @@
+/****** Header Section ******/
+
+#header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  @media all and (min-width: 768px) {
+      @include flexLayout(space-between);
+      flex-direction: row;
+      background-color: rgba($darkGreen, 0.95);
+      position: fixed;
+    }
+}
+
+.header__logo {
+  background-color: rgba($darkGreen, 0.95);
+  @include flexLayout(center);
+  height: rem(60);
+  align-items: center;
+  @media all and (min-width: 768px) {
+    background: none;
+  }
+}
+
+.logo {
+  height: rem(40);
+}
+
+.header__menu {
+  @media all and (min-width: 768px){
+    min-width: rem(350);
+    height: rem(60);
+    line-height: rem(60)
+  } 
+  .menu__list {
+    height: rem($big);
+    background-color: rgba($lightGreen, 0.9);
+    @include flexLayout(space-around);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    .menu__link {
+      font-family: $rubik;
+      color: $white;
+      font-weight: 500;
+      line-height: 2;
+      font-size: rem($small);
+      text-decoration: none;
+      display: flex;
+      align-content: center;
+      text-transform: uppercase;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    @media all and (min-width: 768px) {
+      height: rem(60);
+      line-height: rem(60);
+      background: none;
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  #header .wrapper {
+    margin: 0;
+  }
+}
