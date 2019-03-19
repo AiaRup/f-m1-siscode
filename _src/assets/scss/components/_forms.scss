@@ -1,73 +1,65 @@
 .contact__main {
-    padding-top: rem($medium); 
+  padding-top: rem($medium);
 }
 
 // sheets styles
 main {
-    padding: 0;
-    margin: 0 auto 60px;
+  padding: 0;
+  margin: 0 auto 60px;
 }
 
-
-// form styles 
+// form styles
 
 .contact__page {
-    @include paragraphStyle;
+  @include paragraphStyle;
 
-    .field__container {
-        margin-top: rem(13);
-        
-        &:first-child {
-            margin-top: rem(58);
-        }
-    
-    }
+  .field__container {
+    margin-top: rem(13);
 
-    .contact__main--title {
-        @include titleStyle ($darkGreen, rem(24));
-        padding: 0;
-        margin: 0 0 rem($small) 0;
+    &:first-child {
+      margin-top: rem(58);
     }
+  }
 
-    .contact__main--secondarytext {
-        font-size: rem(12);
-        margin-bottom: 0;
-    }
+  .contact__main--title {
+    @include titleStyle($darkGreen, rem(24));
+    padding: 0;
+    margin: 0 0 rem($small) 0;
+  }
 
-    .asterisk{
-        color: aqua;
-    }
+  .contact__main--secondarytext {
+    font-size: rem(12);
+    margin-bottom: 0;
+  }
 
-    .field__label {
-        font-size: rem(14);
-        display: block;
-        text-align: left;
-    }
+  .asterisk {
+    color: aqua;
+  }
 
-    .field__input {
-        @include formStyle($darkGray);
-        border: solid rem(1) $lightGray;
-        padding: rem(11) rem($small) rem($small);
-        font-size: rem(14);
-    }
+  .field__label {
+    font-size: rem(14);
+    display: block;
+    text-align: left;
+  }
 
-    .field__textarea {
-        height: rem(105);
-    }
+  .field__input {
+    @include formStyle($darkGray);
+    border: solid rem(1) $lightGray;
+    padding: rem(11) rem($small) rem($small);
+    font-size: rem(14);
+  }
 
-    .field__button {
-        @include formStyle($white);
-        margin-top: rem($medium);
-        border: none;
-        background-color: $darkGreen;
-        border-radius: rem(4);
-        font-size: rem(16);
-        text-transform: uppercase;
-    }
+  .field__textarea {
+    height: rem(105);
+  }
+
+  .field__button {
+    @include formStyle($white);
+    margin-top: rem($medium);
+    border: none;
+    background-color: $darkGreen;
+    border-radius: rem(4);
+    font-size: rem(16);
+    text-transform: uppercase;
+  }
 }
-
-
-
-
-
-

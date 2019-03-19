@@ -9,11 +9,11 @@
   left: 0;
   z-index: 2;
   @media all and (min-width: 768px) {
-      @include flexLayout(space-between);
-      flex-direction: row;
-      background-color: rgba($darkGreen, 0.95);
-      position: fixed;
-    }
+    @include flexLayout(space-between);
+    flex-direction: row;
+    background-color: rgba($darkGreen, 0.95);
+    position: fixed;
+  }
 }
 
 .header__logo {
@@ -31,11 +31,11 @@
 }
 
 .header__menu {
-  @media all and (min-width: 768px){
+  @media all and (min-width: 768px) {
     min-width: rem(350);
     height: rem(60);
-    line-height: rem(60)
-  } 
+    line-height: rem(60);
+  }
   .menu__list {
     height: rem($big);
     background-color: rgba($lightGreen, 0.9);

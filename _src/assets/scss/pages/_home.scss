@@ -17,23 +17,33 @@ a {
 }
 
 .wrapper {
-  margin: 0 15px;
+  margin: 0 rem($small);
 
   @media all and (min-width: 768px) {
-    margin: 0 45px;
+    margin: 0 rem($big);
   }
 
   @media all and (min-width: 1200px) {
-    margin: 0 138px;
+    margin: 0 rem(138);
   }
 }
 
 /* fix the overlap of the nav in the section header when scrolling */
-#team::before,
-#about::before {
-  display: block;
-  content: ' ';
-  margin-top: -105px;
-  height: 105px;
-  visibility: hidden;
+#scroll-space-team,
+#scroll-space-about {
+  height: 0;
+  position: absolute;
+  top: rem(-105);
+  left: 0;
+  @media all and (min-width: 768px) {
+    top: rem(-60);
+  }
 }
+// #team::before,
+// #about::before {
+//   display: block;
+//   content: ' ';
+//   margin-top: rem(-105);
+//   height: rem(105);
+//   visibility: hidden;
+// }
