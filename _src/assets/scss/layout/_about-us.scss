@@ -21,7 +21,7 @@
 .member__item {
   margin-bottom: rem($big);
   @media all and (min-width: 768px) {
-    @include flexLayout(flex-start);
+    // @include flexLayout(flex-start);
     text-align: left;
     margin-bottom: rem(60);
     display: grid;
@@ -50,7 +50,7 @@
 .member__content {
   padding: rem(10) rem(10) 0;
   @media all and (min-width: 768px){
-    width: 70%;
+    //width: 70%;
   }
   @media all and (min-width: 1200px) {
     padding: 0;
@@ -74,8 +74,8 @@
   line-height: 1.5;
   font-size: rem(16);
   @media all and (min-width: 1200px) {
-  padding-right: rem(160);
-  padding-left: rem(160);
+  // padding-right: rem(160);
+  // padding-left: rem(160);
 }
 }
 
