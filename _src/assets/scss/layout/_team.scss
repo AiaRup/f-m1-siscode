@@ -4,6 +4,7 @@
 #team {
   background-color: $white;
   text-align: center;
+  position: relative;
 
   .team__title {
     @include titleStyle($lightGreen, rem(24));
