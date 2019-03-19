@@ -1,9 +1,8 @@
 /****** HERO Section ******/
 
-/* #hero {
-  display: flex;
-  flex-direction: column;
-} */
+#hero {
+  position: relative;
+}
 
 .hero__image {
   width: 100%;
@@ -18,17 +17,20 @@
 }
 
 .claim__section {
-  transform: translateY(-100%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  min-width: rem(290);
+  z-index: 2;
   background-color: $white;
-  display: flex;
-  flex-direction: column;
   box-sizing: border-box;
   max-width: rem(290);
   margin: 0 auto;
   @media all and (min-width: 768px) {
-    align-self: flex-start;
     max-width: rem(441);
     height: rem(80);
+    left: rem(46);
     transform: translateY(-100%);
     background-color: rgba($white, 0.8);
     margin: 0;
@@ -37,6 +39,7 @@
     height: rem(90);
     max-width: rem(574);
     background-color: rgba($white, 0.8);
+    left: rem(138);
   }
   .claim__title {
     font-family: $openSans;

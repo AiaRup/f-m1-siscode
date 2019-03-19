@@ -5,12 +5,16 @@
   background-color: $white;
   text-align: center;
   position: relative;
+  padding-top: rem(46);
+  @media all and (min-width: 768px) {
+    padding-top: 0;
+  }
 
   .team__title {
+    margin: rem($medium) 0 0;
     @include titleStyle($lightGreen, rem(24));
-    margin: 0;
     @media all and (min-width: 768px) {
-      padding-top: 0;
+      margin: rem($big) 0 0;
       color: $darkGreen;
     }
   }
