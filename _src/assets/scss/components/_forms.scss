@@ -1,7 +1,4 @@
 // sheets styles
-body {
-    padding: 200px 0;
-}
 .contact__page {
     padding: 0;
     margin: 0 auto 60px;
@@ -17,6 +14,7 @@ body {
 
     @media all and (min-width:1200px) {
         max-width: rem(601);
+        padding: rem($big);
     }
 
     .field__container {
