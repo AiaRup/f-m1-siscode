@@ -1,13 +1,11 @@
-// aditional padding for content. Remove after adding hero.
-
-.contact__main {
-    padding-top: 300px; 
-}
-
 // sheets styles
-main {
+body {
+    padding: 200px 0;
+}
+.contact__page {
     padding: 0;
     margin: 0 auto 60px;
+   
 }
 
 
@@ -15,20 +13,47 @@ main {
 
 .contact__page {
     @include paragraphStyle;
+    max-width: rem(442);
+
+    @media all and (min-width:1200px) {
+        max-width: rem(601);
+    }
 
     .field__container {
         margin-top: rem(13);
+        margin: 0 auto;
         
         &:first-child {
             margin-top: rem(58);
         }
     
+    @media all and (min-width:1200px) {
+        &:nth-child(2) {
+            width: rem(395);
+            display: inline-block;
+            margin: 0 rem(39) 0 0;
+            padding: 0;
+        }
+
+        &:nth-child(3) {
+            width: rem(162);
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+    }
+        
+    }
+
+    .form__container {
+        display: flex;
     }
 
     .contact__main--title {
         @include titleStyle ($darkGreen, rem(24));
         padding: 0;
         margin: 0 0 rem($small) 0;
+        text-transform: uppercase;
     }
 
     .contact__main--secondarytext {
@@ -57,6 +82,17 @@ main {
         height: rem(105);
     }
 
+    .field__button--container{
+        max-width: rem(442);
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+
+        @media all and (min-width:1200px) {
+            max-width: rem(601);
+        }
+    }
+
     .field__button {
         @include formStyle($white);
         margin-top: rem($medium);
@@ -65,8 +101,18 @@ main {
         border-radius: rem(4);
         font-size: rem(16);
         text-transform: uppercase;
+        cursor: pointer;
+    
+
+        @media all and (min-width: 768px) { 
+        width: rem(278);
+    }
     }
 }
+
+
+
+        
 
 
 
