@@ -16,14 +16,14 @@ a {
 }
 
 .wrapper {
-  margin: 0 15px;
+  margin: 0 rem($small);
 
   @media all and (min-width: 768px) {
-    margin: 0 45px;
+    margin: 0 rem($big);
   }
 
   @media all and (min-width: 1200px) {
-    margin: 0 138px;
+    margin: 0 rem(138);
   }
 }
 
@@ -32,7 +32,7 @@ a {
 #about::before {
   display: block;
   content: ' ';
-  margin-top: -105px;
-  height: 105px;
+  margin-top: rem(-105);
+  height: rem(105);
   visibility: hidden;
 }
