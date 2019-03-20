@@ -36,7 +36,9 @@
       }
 
       &:nth-child(even) .member__content {
-        order: -1;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        // order: -1;
       }
     }
     @media all and (min-width: 1200px) {

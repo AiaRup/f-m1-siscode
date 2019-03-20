@@ -1,114 +1,98 @@
-// sheets styles
+/****** Form Section ******/
+
 .contact__page {
+  padding: 0;
+  margin: 0 auto rem(58);
+  @include paragraphStyle;
+  max-width: rem(442);
+
+  @media all and (min-width: 1200px) {
+    max-width: rem(601);
+  }
+
+  .field__container--phonemail {
+    @media all and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+
+      .field__container--email {
+        flex-grow: 1;
+        margin-right: rem(44);
+      }
+
+      .field__container--phone {
+        width: rem(162);
+      }
+    }
+  }
+
+  .field__container {
+    margin-top: rem(13);
+  }
+
+  .contact__main--title {
+    @include titleStyle($darkGreen, rem(24));
     padding: 0;
-    margin: 0 auto rem(58);
-}
+    margin: rem($big) 0 rem($small) 0;
+    text-transform: uppercase;
+  }
 
-// form styles 
+  .contact__main--secondarytext {
+    font-size: rem(12);
+    margin-bottom: 0;
+  }
 
-.contact__page {
-    @include paragraphStyle;
+  .asterisk {
+    color: aqua;
+  }
+
+  .field__label {
+    font-size: rem(14);
+    display: block;
+    text-align: left;
+    margin-bottom: rem(7);
+    width: 100%;
+  }
+
+  .field__input {
+    @include formStyle($darkGray);
+    border: solid rem(1) $lightGray;
+    padding: rem(11) rem($small) rem($small);
+    font-size: rem(14);
+    margin-bottom: rem(13);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .field__textarea {
+    height: rem(105);
+  }
+
+  .field__button--container {
     max-width: rem(442);
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
 
-    @media all and (min-width:1200px) {
-        max-width: rem(601);
+    @media all and (min-width: 1200px) {
+      max-width: 100%;
     }
-    
-    .field__container--phonemail {   
-        @media all and (min-width:1200px) {
-        display: flex;
-        justify-content: space-between;
+  }
 
-        .field__container--email {
-            flex-grow: 1;
-            margin-right: rem(44);
-        }
+  .field__button {
+    @include formStyle($white);
+    margin-top: rem($medium);
+    border: none;
+    background-color: $darkGreen;
+    border-radius: rem(4);
+    font-size: rem(16);
+    text-transform: uppercase;
+    cursor: pointer;
 
-        .field__container--phone {
-            width: rem(162);
-        }
-     
-        }
+    @media all and (min-width: 768px) {
+      width: rem(278);
     }
-
-    .field__container {
-        margin-top: rem(13);
-        // width: 100%;
-    }
-
-    .contact__main--title {
-        @include titleStyle ($darkGreen, rem(24));
-        padding: 0;
-        margin: rem($big) 0 rem($small) 0;
-        text-transform: uppercase;
-    }
-
-    .contact__main--secondarytext {
-        font-size: rem(12);
-        margin-bottom: 0;
-    }
-
-    .asterisk{
-        color: aqua;
-    }
-
-    .field__label {
-        font-size: rem(14);
-        display: block;
-        text-align: left;
-        margin-bottom: rem(7);
-        width: 100%;
-    }
-
-    .field__input {
-        @include formStyle($darkGray);
-        border: solid rem(1) $lightGray;
-        padding: rem(11) rem($small) rem($small);
-        font-size: rem(14);
-        margin-bottom: rem(13);
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-
-    .field__textarea {
-        height: rem(105);
-    }
-
-    .field__button--container{
-        max-width: rem(442);
-        margin: 0 auto;
-        display: flex;
-        justify-content: flex-end;
-
-        @media all and (min-width:1200px) {
-            max-width: 100%;
-        }
-    }
-
-    .field__button {
-        @include formStyle($white);
-        margin-top: rem($medium);
-        border: none;
-        background-color: $darkGreen;
-        border-radius: rem(4);
-        font-size: rem(16);
-        text-transform: uppercase;
-        cursor: pointer;    
-
-        @media all and (min-width: 768px) { 
-        width: rem(278);
-    }
-    }
+  }
 }
-
-
-
-        
-
-
-
-
-
-
