@@ -1,24 +1,28 @@
-<form action="https://formspree.io/siscode.adalab@gmail.com" method="POST" >
+<form action="https://formspree.io/siscode.adalab@gmail.com" method="POST">
 
-    <div class="contact__page form__container">
+    <div class="contact__page">
         <div class="field__container">
             <label class="field__label" for="fullName">Full name <span class="asterisk">*</span></label>
-            <input class="field__input" type="text" id="fullName" name="fullName" placeholder="Name..." required>
+            <input class="field__input" type="text" id="fullName" name="fullName" placeholder="Name" required>
         </div>
 
-        <div class="field__container field__container--email">
-            <label class="field__label" for="email">Email <span class="asterisk">*</span></label>
-            <input class="field__input" type="email" id="email" name="email" value="name.surname@main.com" placeholder="Email..." required>
-        </div>
+        <div class="field__container--phonemail">
+            <div class="field__container field__container--email">
+                <label class="field__label" for="email">Email <span class="asterisk">*</span></label>
+                <input class="field__input" type="email" id="email" name="email" value="name.surname@main.com"
+                    placeholder="Email..." required>
+            </div>
 
-        <div class="field__container field__container--phone">
-            <label class="field__label" for="phone">Phone number</label>
-            <input class="field__input" type="tel" id="phone" name="phone" placeholder="Example: 123456789">
+            <div class="field__container field__container--phone">
+                <label class="field__label" for="phone">Phone number</label>
+                <input class="field__input" type="tel" id="phone" name="phone" placeholder="Example: 123456789">
+            </div>
         </div>
 
         <div class="field__container">
             <label class="field__label" for="message">Message<span class="asterisk">*</span></label>
-            <textarea class="field__textarea field__input" name="textArea" id="message" rows="4" placeholder="Talk to us...">
+            <textarea class="field__textarea field__input" name="textArea" id="message" rows="4"
+                placeholder="Don’t be a stranger, just say hello.">
             </textarea>
 
         </div>

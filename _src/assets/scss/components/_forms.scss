@@ -1,10 +1,8 @@
 // sheets styles
 .contact__page {
     padding: 0;
-    margin: 0 auto 60px;
-   
+    margin: 0 auto rem(58);
 }
-
 
 // form styles 
 
@@ -14,37 +12,28 @@
 
     @media all and (min-width:1200px) {
         max-width: rem(601);
-        padding: rem($big);
+    }
+    
+    .field__container--phonemail {   
+        @media all and (min-width:1200px) {
+        display: flex;
+        justify-content: space-between;
+
+        .field__container--email {
+            flex-grow: 1;
+            margin-right: rem(44);
+        }
+
+        .field__container--phone {
+            width: rem(162);
+        }
+     
+        }
     }
 
     .field__container {
         margin-top: rem(13);
-        margin: 0 auto;
-        
-        &:first-child {
-            margin-top: rem(58);
-        }
-    
-    @media all and (min-width:1200px) {
-        &:nth-child(2) {
-            width: rem(395);
-            display: inline-block;
-            margin: 0 rem(39) 0 0;
-            padding: 0;
-        }
-
-        &:nth-child(3) {
-            width: rem(162);
-            display: inline-block;
-            margin: 0;
-            padding: 0;
-        }
-    }
-        
-    }
-
-    .form__container {
-        display: flex;
+        // width: 100%;
     }
 
     .contact__main--title {
@@ -67,6 +56,8 @@
         font-size: rem(14);
         display: block;
         text-align: left;
+        margin-bottom: rem(7);
+        width: 100%;
     }
 
     .field__input {
@@ -74,6 +65,7 @@
         border: solid rem(1) $lightGray;
         padding: rem(11) rem($small) rem($small);
         font-size: rem(14);
+        margin-bottom: rem(13);
     }
 
     .field__textarea {
@@ -87,7 +79,7 @@
         justify-content: flex-end;
 
         @media all and (min-width:1200px) {
-            max-width: rem(601);
+            max-width: 100%;
         }
     }
 
