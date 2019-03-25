@@ -88,6 +88,7 @@
   border-radius: rem(4);
   overflow-y: hidden;
   margin: 0 auto;
+  transition: border-radius ease 1s, box-shadow ease 1s;
   @media all and (min-width: 768px) {
     width: rem(210);
     height: rem(210);
@@ -99,6 +100,10 @@
   }
   .member__image {
     width: 100%;
+  }
+  &:hover {
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgba($darkGray, 0.3);
   }
 }
 
