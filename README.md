@@ -23,7 +23,7 @@ You will need to install [Node.js](https://nodejs.org/) and [Gulp](https://gulpj
 $ gulp
 ```
 
-This tast will launch a webserver with BrowserSync and several watchers will be watching the files SCSS / JS / HTML, in the folder ** public / **, to reload the browser when needed.
+This tast will launch a webserver with BrowserSync and several watchers will be watching the files SCSS / JS / HTML, in the folder **public/**, to reload the browser when needed.
 
 ### Final version to upload to production
 
@@ -59,9 +59,9 @@ The folder structure looks like this:
 
 It includes the package [**gulp-html-partial**](https://www.npmjs.com/package/gulp-html-partial) that will allow you to have an html templates/partials system.
 
-## Imágenes e iconos
+## Images and Icons
 
-You have in **\_ src/** a folder for the images of the project and one for the icons like the favicon or the icons of mobile devices. The latter are generated in the root of the folders **public/** and **docs/**.
+You have in **\_src/** a folder for the images of the project and one for the icons like the favicon or the icons of mobile devices. The latter are generated in the root of the folders **public/** and **docs/**.
 
 ## CSS
 
