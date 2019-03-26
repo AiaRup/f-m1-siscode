@@ -1,6 +1,6 @@
 <!-- ![Adalab](_src/assets/images/logo-adalab-80px.png) -->
 
-[siscode](_src/assets/images/siscode-black.png)
+![siscode](_src/assets/images/siscode-black.png)
 
 We are SISCODE and this is our first group project made in Adalab.
 We coded an informative web page about us as a team and individually.
@@ -71,4 +71,4 @@ In the project I used the package [**gulp-combine-mq**](https://www.npmjs.com/pa
 
 If you want to contribute to the project, change something that is not working properly or, you would like to offer a new feature, you can open a new issue.
 
-Thank you for your interest in my project ❤︎.
+Thank you for your interest in our project ❤︎.
