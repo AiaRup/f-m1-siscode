@@ -23,7 +23,7 @@ You will need to install [Node.js](https://nodejs.org/) and [Gulp](https://gulpj
 $ gulp
 ```
 
-This tast will launch a webserver with BrowserSync and several watchers will be watching the files SCSS / JS / HTML, in the folder **public/**, to reload the browser when needed.
+This task will launch a webserver with BrowserSync and several watchers will be watching the files SCSS / JS / HTML, in the folder **public/**, to reload the browser when needed.
 
 ### Final version to upload to production
 
@@ -65,7 +65,7 @@ You have in **\_src/** a folder for the images of the project and one for the ic
 
 ## CSS
 
-In the project I used the package [**gulp-combine-mq**](https://www.npmjs.com/package/gulp-combine-mq) that groups all the mediaqueries at the end of the css document.
+In the project we used the package [**gulp-combine-mq**](https://www.npmjs.com/package/gulp-combine-mq) that groups all the mediaqueries at the end of the css document.
 
 ## Something is missing?
 
